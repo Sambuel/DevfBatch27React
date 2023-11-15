@@ -6,8 +6,10 @@ import seis from './assets/img/seis.jpg'
 import tres from './assets/img/tres.jpg'
 import uno from './assets/img/uno.jpg'
 import ilustracion from './assets/img/ilustracion.svg'
-import ilustracion1 from './assets/img/ilustracion1.svg'
 import Header from './components/Header'
+import Seccion1 from './components/Seccion1'
+import Seccion2 from './components/seccion2'
+import Seccion3 from './components/Seccion3'
 function App () {
   return (
     <>
@@ -16,53 +18,22 @@ function App () {
         desc='Acabamos de aprender como pasar de html a jsx y hacerlo mas dinamico con PROPS'
         boton='contactame'
       />
-      <Header
-        titulo='Titulo 2 '
-        desc='Este es un componente reutilizable'
-        boton='genial'
+      <Seccion1
+        titulo='Hola desde jsx'
+        parrafo='Acabamos de aprender como pasar de html a jsx y hacerlo mas dinamico con PROPS'
+        textoBoton='contactame'
       />
-      <section className='wave-contenedor website'>
-        <img src={ilustracion1} alt='' />
-        <div className='contenedor-textos-main'>
-          <h2 className='titulo left'>Title of section</h2>
-          <p className='parrafo'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt enim reiciendis
-            molestias nam tempore. Ullam hic accusantium eligendi ipsam corrupti!
-          </p>
-          <a href='' className='cta'>Learn more</a>
-        </div>
-      </section>
+      <Seccion2
+        tituloLeft='secccion 2 de prueba'
+        desc2='hiausgduiawgdaluisgdaliusgbsajBDLASJBDS'
 
-      <section className='info'>
-        <div className='contenedor'>
-          <h2 className='titulo left'>Juntos podemos apoyar</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </section>
-
-      <section className='cards contenedor'>
-        <h2 className='titulo'>Our services</h2>
-        <div className='content-cards'>
-          <article className='card'>
-            <i className='far fa-clone' />
-            <h3>Title Card</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <a href='' className='cta'>Learn more</a>
-          </article>
-          <article className='card'>
-            <i className='fas fa-database' />
-            <h3>Title Card</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <a href='' className='cta'>Learn more</a>
-          </article>
-          <article className='card'>
-            <i className='far fa-object-group' />
-            <h3>Title Card</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <a href='' className='cta'>Learn more</a>
-          </article>
-        </div>
-      </section>
-
+      />
+      <Seccion3
+        servicios='Servicios en español '
+        titulo1='Titulo  card 1 '
+        desc1='sdgasgsaj'
+        boton1='obten mas informacion'
+      />
       <section className='galeria'>
         <div className='contenedor'>
           <h2 className='titulo'>Our work</h2>
