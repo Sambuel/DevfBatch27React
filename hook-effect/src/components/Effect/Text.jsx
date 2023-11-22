@@ -3,8 +3,12 @@ const Text = () => {
     const [text, setText] = useState("")
     
     useEffect(() => {
-      
-    }, )
+      console.log("COMPONENTE MONTADO ");
+
+      return () => {
+        console.log("COMPONENTE DESMONTADO");
+      }
+    }, [text])
     
 
   return (
